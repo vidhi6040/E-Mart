@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="Styles/cart.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Images/cart_logo.png" class="image">
+            <div class="logo-text">E-Mart</div>
+        </div>
+        <div class="icon-container" >
+            <a class="icon" style="color: #1e90ff;" href="main.html">Home</a>
+            <a class="icon" href="men.html">Men</a>
+            <a class="icon" href="women.html">Women</a>
+            <a class="icon" href="kids.html">Kids</a>
+            <div class="icon">Shoes</div>
+            <div class="icon">Contact Us</div>
+            <span id="auth-links"></span>
+        </div>
+        <div class="basket">
+            <a href="cart.html"><img src="Images/basket.png"></a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total Price</th>
+                </tr>
+                <tr>
+                    <td><img src="Images/Women/w_1.png" style="width:60px; height:auto;"></td>
+                    <td><p>Elegant Magenta Embroidered Anarkali Set for Festive Wear</p></td>
+                    <td><p>Rs. 3990</p></td>
+                    <td><p>1</p></td>
+                    <td><p>Rs. 3990</p></td>
+                </tr>
+                <tr>
+                    <td><img src="Images/Women/w_1.png" style="width:60px; height:auto;"></td>
+                    <td><p>Elegant Magenta Embroidered Anarkali Set for Festive Wear</p></td>
+                    <td><p>Rs. 3990</p></td>
+                    <td><p>1</p></td>
+                    <td><p>Rs. 3990</p></td>
+                </tr>
+                <tr>
+                    <td><img src="Images/Women/w_1.png" style="width:60px; height:auto;"></td>
+                    <td><p>Elegant Magenta Embroidered Anarkali Set for Festive Wear</p></td>
+                    <td><p>Rs. 3990</p></td>
+                    <td><p>1</p></td>
+                    <td><p>Rs. 3990</p></td>
+                </tr>
+            </table>
+        </div>
+        <div class="box">
+            <h3  style="color: #6a0dad;">Payment Details</h3>
+            <table>
+                <tr>
+                    <td>Sub-Total</td>
+                    <td>Rs. 11970</td>
+                </tr>
+                <tr>
+                    <td>Shipping Charges</td>
+                    <td>Rs. 0</td>
+                </tr>
+                <tr>
+                    <td>Discount Amount</td>
+                    <td>Rs. 100</td>
+                </tr>
+                <tr style="box-shadow: none;">
+                    <td style="color: #1e90ff; font-weight: bolder;">Total</td>
+                    <td style="color: #1e90ff; font-weight: bolder;">Rs. 11870</td>
+                </tr>
+            </table>
+            
+        </div>
+        <div class="box-2">
+            <h3>Select a payment method</h3>
+            <select name="pay-method">
+                <option value="credit-card">Credit Card</option>
+                <option value="debit-card">Debit Card</option>
+                <option value="upi-payment">UPI Payment</option>
+            </select>
+            <div class="payment-btn">
+                    <h4>Proceed to Pay</h4>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="Scripts/auth.js"></script>
+</body>
+</html>
