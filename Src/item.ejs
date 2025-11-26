@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/Styles/item.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= item.Item_name %> | E-Mart</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/Images/cart_logo.png" class="image">
+            <div class="logo-text">E-Mart</div>
+        </div>
+        <div class="icon-container">
+            <a class="icon" style="color: #1e90ff;" href="/main.html">Home</a>
+            <a class="icon" href="/men.html">Men</a>
+            <a class="icon" href="/women.html">Women</a>
+            <a class="icon" href="/kids.html">Kids</a>
+            <div class="icon">Shoes</div>
+            <div class="icon">Contact Us</div>
+            <span id="auth-links"></span>
+        </div>
+        <div class="basket">
+            <img src="/Images/basket.png">
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="img-container">
+                <img src="/<%= item.img_file %>" alt="<%= item.Item_name %>">
+            </div>
+            <div class="desc-container">
+                <div class="item-name">
+                    <p><%= item.Item_name %></p>
+                </div>
+                <div class="desc">
+                    <p style="font-weight: bold; font-size: large;">Costs: Rs.<%= item.Price %></p><br>
+                    <p><%= item.Item_desc %></p><br>
+                    <p style="font-weight: bold; font-size: large;">Select Size</p>
+                    <ul>
+                        <li>XS</li>
+                        <li>S</li>
+                        <li>M</li>
+                        <li>L</li>
+                        <li>XL</li>
+                    </ul>
+                    <div class="add">
+                        <h4>Add to Cart</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/Scripts/auth.js"></script>
+</body>
+</html>
